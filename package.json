@@ -1,0 +1,32 @@
+{
+  "author": "Roberto Barros",
+  "name": "react-boilerplate",
+  "version": "0.0.0",
+  "homepage": "",
+  "dependencies": {},
+  "devDependencies": {
+    "gulp": "~3.8.10",
+    "gulp-clean": "~0.3.1",
+    "gulp-coffee": "~2.2.0",
+    "gulp-sass": "~1.1.0",
+    "gulp-watch": "~3.0.0",
+    "gulp-livereload": "~2.1.1",
+    "gulp-rev": "~2.0.1",
+    "gulp-uglify": "~1.0.1",
+    "gulp-minify-css": "~0.3.10",
+    "gulp-util": "*",
+
+    "webpack": "~1.4.13",
+    "webpack-dev-server": "~1.6.6",
+
+    "jsx-loader": "~0.12.2",
+
+    "coffee-script": "*",
+    "coffee-loader": "~0.7.2",
+    "script-loader": "~0.6.1",
+
+    "tiny-lr": "~0.1.4",
+    "tmp": "0.0.24"
+  },
+  "license": "MIT"
+}
