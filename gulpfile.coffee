@@ -89,6 +89,7 @@ createServers = (port, lrport) ->
   lr = tiny_lr()
   lr.listen lrport, -> gutil.log("LiveReload listening on", lrport)
   app = express()
+  app.use(require('connect-livereload')({port: lrport}));
   app.use(express.static(path.resolve("./dist")))
   app.listen port, -> gutil.log("HTTP server listening on", port)
 
