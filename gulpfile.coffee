@@ -15,13 +15,17 @@ webpack   = require("webpack")
 #
 
 webpackConfig = require("./webpack.config.js")
+
 if gulp.env.production  # i.e. we were executed with a --production option
   webpackConfig.plugins = webpackConfig.plugins.concat(new webpack.optimize.UglifyJsPlugin())
   webpackConfig.output.filename = "main-[hash].js"
+
 sassConfig = { includePaths : ['src/styles'] }
+
 httpPort = 4000
+
 # paths to files in bower_components that should be copied to dist/assets/vendor
-vendorPaths = ['es5-shim/es5-sham.js', 'es5-shim/es5-shim.js', 'bootstrap/dist/css/bootstrap.css']
+vendorPaths = ['es5-shim/es5-sham.js', 'es5-shim/es5-shim.js', 'semantic-ui/dist/semantic.min.css']
 
 #
 # TASKS
