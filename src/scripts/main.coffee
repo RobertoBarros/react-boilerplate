@@ -7,14 +7,6 @@ require("script!semantic-ui/dist/semantic.js")
 require("script!reflux/dist/reflux.js")
 
 
-HelloMessage = React.createClass
-  render: () ->
-    `(
-		<div>Hello World</div>
-		)`
-
-
-
-#StarterApp = require("./components/StarterApp.coffee")
+HelloMessage = require("./components/HelloMessage.coffee")
 
 React.render(`<HelloMessage />`, document.getElementById('app'))
