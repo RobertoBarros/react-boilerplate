@@ -9,6 +9,7 @@ watch     = require('gulp-watch')
 rev       = require('gulp-rev')
 tiny_lr   = require('tiny-lr')
 webpack   = require("webpack")
+cjsx      = require('gulp-cjsx')
 
 #
 # CONFIGS
@@ -42,6 +43,7 @@ gulp.task 'sass', ->
   .pipe(if gulp.env.production then minifyCSS() else gutil.noop())
   .pipe(if gulp.env.production then rev() else gutil.noop())
   .pipe(gulp.dest('dist/assets'))
+
 
 # Some JS and CSS files we want to grab from Bower and put them in a dist/assets/vendor directory
 # For example, the es5-sham.js is loaded in the HTML only for IE via a conditional comment.

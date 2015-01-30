@@ -9,4 +9,5 @@ require("script!reflux/dist/reflux.js")
 
 HelloMessage = require("./components/HelloMessage.coffee")
 
+
 React.render(`<HelloMessage />`, document.getElementById('app'))

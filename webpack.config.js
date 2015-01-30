@@ -19,6 +19,7 @@ module.exports = {
   resolve: {
     // Tell webpack to look for required files in bower and node
     modulesDirectories: ['bower_components', 'node_modules'],
+    extensions: ['', '.js', '.cjsx', '.coffee'],
   },
   module: {
     loaders: [
@@ -27,7 +28,8 @@ module.exports = {
       { test: /\.jpg/, loader: "url-loader?limit=10000&minetype=image/jpg" },
       { test: /\.png/, loader: "url-loader?limit=10000&minetype=image/png" },
       { test: /\.js$/, loader: "jsx-loader" },
-      { test: /\.coffee$/, loader: "jsx-loader!coffee-loader" }
+      { test: /\.coffee$/, loader: "jsx-loader!coffee-loader" },
+      { test: /\.cjsx$/, loader: "jsx-loader!coffee-loader!cjsx-loader"}
     ],
     noParse: /\.min\.js/
   },
