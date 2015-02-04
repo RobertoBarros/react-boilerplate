@@ -4,7 +4,7 @@ HelloMessage = module.exports = React.createClass
   render: () ->
     `(
 		<div>Hello World
-		<CoolComponent> </CoolComponent>
+		<CoolComponent neat="yes!!!"> </CoolComponent>
 		</div>
 
 		)`
