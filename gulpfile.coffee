@@ -9,7 +9,6 @@ watch     = require('gulp-watch')
 rev       = require('gulp-rev')
 tiny_lr   = require('tiny-lr')
 webpack   = require("webpack")
-cjsx      = require('gulp-cjsx')
 
 #
 # CONFIGS
