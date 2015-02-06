@@ -29,7 +29,7 @@ module.exports = {
       { test: /\.png/, loader: "url-loader?limit=10000&minetype=image/png" },
       { test: /\.js$/, loader: "jsx-loader" },
       { test: /\.coffee$/, loader: "jsx-loader!coffee-loader" },
-      { test: /\.cjsx$/, loader: "jsx-loader!coffee-loader!cjsx-loader"}
+      { test: /\.cjsx$/, loader: "coffee-loader!cjsx-loader"}
     ],
     noParse: /\.min\.js/
   },
