@@ -1,17 +1,17 @@
 RouteHandler = ReactRouter.RouteHandler
-Link = ReactRouter.Link
+Header = require("./components/layout/header")
 
 App = module.exports = React.createClass
 	render: () ->
 		<div>
-			<header>
-				<ul>
-					<li><Link to="app">Home</Link></li>
-					<li><Link to="other" neat="Aqui">Other</Link></li>
-				</ul>
-			</header>
-			<br/>
-			<RouteHandler/>
+			<Header />
+			<main className="ui page grid">
+				<div className="row">
+					<div className="column">
+						<RouteHandler />
+					</div>
+				</div>
+			</main>
 		</div>
 
 
